@@ -1,5 +1,6 @@
 import styles from '../../styles/Home.module.css';
-import Link from 'next/link'
+import Link from 'next/link';
+import Head from 'next/head'
 
 export const getStaticProps = async () =>{
 
@@ -14,6 +15,10 @@ export const getStaticProps = async () =>{
 const Blog = ({posts}) => {
     return (
         <div className={styles.main}>
+            <Head>
+        <title>iabhishek || Blogs</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
             <h1>All Blogs Here Through Fake APIs</h1>
             <div className={styles.grid}>
             {posts.map(post =>(
