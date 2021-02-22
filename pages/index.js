@@ -9,9 +9,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h2>This is Home page of Next js</h2>
-      <div className={styles.grid}>
-        <div className={styles.card}>
-          <div className={styles.code}>
+      <div className={styles.container}>
+        <div>
+          <div>
             <h3>This is the heading</h3>
           </div>
           <p>This is the text paragraph tag in the card of next demo</p>

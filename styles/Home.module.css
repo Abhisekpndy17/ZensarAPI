@@ -8,8 +8,10 @@
 }
 
 .main {
-  padding: 5rem 0;
-  flex: 1;
+  width: 100%;
+  margin: 0px auto;
+  padding: 2rem 0;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,21 +78,25 @@
   align-items: center;
   height: 100%;
 }
-.navgrid li{
+.navgrid li {
   list-style: none;
   padding-left: 2rem;
 }
 
 .grid {
-  display: flex;
-  align-items: center;
+  height: auto;
+  width: 90%;
+  margin: 5px auto;
+  display: grid;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 15px;
 }
 
 .card {
+  height: 100%;
+  width: 100%;
   margin: 1rem;
   flex-basis: 45%;
   padding: 1.5rem;
@@ -98,15 +104,20 @@
   color: inherit;
   text-decoration: none;
   border: 1px solid #eaeaea;
+  background: #f8f8f5; /* fallback for old browsers */
+  
   border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  transition: color 0.15s ease, border-color 0.15s ease,
+    background-color 0.25s ease, box-shadow 0.25s ease-in-out;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #2977d6;
+  border-color: #fff;
+  background-color: #fff;
+  box-shadow: 10px 20px 6px -10px black;
 }
 
 .card h3 {
@@ -116,7 +127,7 @@
 
 .card p {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 1.5;
 }
 
