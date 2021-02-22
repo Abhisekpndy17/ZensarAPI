@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 const about = () => {
     return (
-        <div className={styles.container}>
+        <div className={styles.main}>
             <Head>
         <title>iabhishek || About</title>
         <link rel="icon" href="/favicon.ico" />

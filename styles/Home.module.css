@@ -1,13 +1,22 @@
 .container {
-  min-height: 100vh;
+  
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  
+}
+.imgitem{
+  height: 80vw;
+  width: auto;
 }
 
+.imgitem img{
+  height: 100%;
+  width: 100%;
+}
 .main {
+  min-height: 50vh;
   width: 100%;
   margin: 0px auto;
   padding: 2rem 0;
@@ -25,6 +34,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #000;
+  color: #f1f1f1;
 }
 
 .footer img {
@@ -83,6 +94,7 @@
   padding-left: 2rem;
 }
 
+
 .grid {
   height: auto;
   width: 90%;
@@ -105,7 +117,7 @@
   text-decoration: none;
   border: 1px solid #eaeaea;
   background: #f8f8f5; /* fallback for old browsers */
-  
+  box-shadow: 10px 15px 6px -10px black;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease,
     background-color 0.25s ease, box-shadow 0.25s ease-in-out;
@@ -117,7 +129,7 @@
   color: #2977d6;
   border-color: #fff;
   background-color: #fff;
-  box-shadow: 10px 20px 6px -10px black;
+  box-shadow: 0px 10px 10px -10px black;
 }
 
 .card h3 {
