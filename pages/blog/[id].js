@@ -31,7 +31,7 @@ export const getStaticProps = async (context) => {
 
 const Details = ({ post }) => {
     return (
-        <div className={style.main}>
+        <div className={style.container}>
             <Head>
                 <title>{post.title}</title>
                 <link rel="icon" href="/favicon.ico" />
